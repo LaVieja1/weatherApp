@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Clima App</title>
+</head>
+<body>
+    <div class="split info">
+        <div class="centered">
+            <h2 id="city" cityName></h2>
+            <h6 date-time></h6>
+            <div id="temperature" cityTemperature></div>
+            <img src="" id="image">
+            <p id="cityWeather" cityWeather></p>
+            <div id="weatherInfo">
+                <div id="feeling" tempFeeling></div>
+                <div id="tempMin" tempMin></div>
+                <div id="tempMax" tempMax></div>
+                <div id="humidity" humidity></div>
+                <div id="wind" wind></div>
+            </div>
+        </div>
+    </div>
+    <div class="split input">
+        <div class="centered">
+            <div id="form-container">
+                <h1>Clima Actual</h1>
+                <h5>Buscar localización</h5>
+                <button class="location-button" location-button><i class="material-icons">location_on</i></button>
+                    <form containter-form>
+                        <input
+                        type="text"
+                        placeholder="Ciudad o codigo postal.."
+                        id="search"
+                        new-entry
+                        required
+                        >
+                    </form>
+                <label class="switch">
+                    <input type="checkbox" switch>
+                    <span class="slider round">
+                        <div>
+                            <span>C</span>
+                            <span>F</span>
+                        </div>
+                    </span>
+                </label>
+
+            </div>
+            <span>Cambiar entre Celsius/Fahrenheit</span>
+            <div>
+                <a href="https://github.com/LaVieja1" target="_blank"
+                ><i class="fa fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/santiago-cano-887316210/" target="_blank"
+                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                ></a>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
